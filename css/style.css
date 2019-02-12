@@ -1,5 +1,6 @@
 :root {
-
+ --font-style: font-family: 'Roboto', sans-serif;
+ --font-color: #333;
 }
 
 
@@ -9,5 +10,37 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-style);
+  background: #f4f4f4;
+  color: var(--font-color);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  cursor: pointer;
+  
+}
 
 /* Utility */
+.l-heading { font-size: 4rem}
+.m-heading {font-size: 3rem}
+.s-heading {font-size: 2rem}
+
+
+
+
+/* Navbar */
+#main-nav .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#main-nav .container .fa-envelope-square {
+  margin-left: 1rem;
+}
+

@@ -1,6 +1,7 @@
 :root {
  --font-style: font-family: 'Roboto', sans-serif;
  --font-color: #333;
+ --primary-color: #2b6be4
 }
 
 
@@ -20,7 +21,7 @@ a {
   color: var(--font-color);
   text-decoration: none;
   cursor: pointer;
-  
+
 }
 
 /* Utility */
@@ -28,11 +29,26 @@ a {
 .m-heading {font-size: 3rem}
 .s-heading {font-size: 2rem}
 
+.p1 {padding: 1.5rem}
+.p2 {padding: 2rem}
+.p3 {padding: 3rem}
+
+.primary-color{color: var(--primary-color)}
+
+
+.container {
+  background: #333;
+  color: #fff;
+  width: 1100px;
+  padding: 1rem;
+  margin: auto;
+
+}
 
 
 
 /* Navbar */
-#main-nav .container {
+#main-nav .nav-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -40,7 +56,35 @@ a {
   padding: 1rem;
 }
 
-#main-nav .container .fa-envelope-square {
+#main-nav .nav-container .fa-envelope-square {
   margin-left: 1rem;
 }
 
+/* About */
+#about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#about .container .item1 {
+  flex:auto;
+}
+
+#about .container p {
+  font-weight: bold;
+}
+
+#about .container ul {
+  list-style: none;
+}
+
+#about .container ul li {
+  padding: 0.2rem;
+}
+
+#about .container ul li:hover {
+ color: var(--primary-color);
+}

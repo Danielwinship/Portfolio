@@ -122,4 +122,15 @@ section {margin-top: 1rem}
 
 #projects {
   text-align: center;
+  background: #131313;
+  color: #f3f3f3;
+}
+
+#projects .container {
+  justify-content: space-evenly;
+}
+
+#projects .container .card {
+  display: flex;
+  flex-direction: column;
 }

@@ -156,8 +156,9 @@ section {margin-top: 1rem}
   flex-direction: column;
 }
 
-#projects .container .card-title {
+#projects .container .card .card-title {
   margin-bottom: 1rem;
+  
 }
 
 #projects .container .card a {
@@ -192,4 +193,48 @@ section {margin-top: 1rem}
 
 #contact .container a {
   color: #131313;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px)  {
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+  
+  }
+
+ #home .container h1 {
+   font-size: 3rem;
+ }
+ .container ul {
+   
+  width: 400px;
+ }
+  
+ #skills .container .card {
+   margin-bottom: 1rem;
+ }
+
+  #projects .container {
+    align-items: center;
+  }
+
+ #projects .container .card {
+   margin-bottom: 1rem;
+   border-bottom: #f3f3f3 solid 1px;
+   width: 300px;
+ }
+
+ #projects .container .card a {
+   padding: 0.3rem 0;
+   font-size: 1.2rem;
+ }
+
 }

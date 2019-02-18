@@ -215,7 +215,7 @@ section {margin-top: 1rem}
  }
  .container ul {
    
-  width: 400px;
+  width: 300px;
  }
   
  #skills .container .card {
@@ -236,5 +236,23 @@ section {margin-top: 1rem}
    padding: 0.3rem 0;
    font-size: 1.2rem;
  }
+
+ #contact .container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+ }
+
+ #contact .container div h3 {
+  padding-bottom: 0.5rem;
+}
+
+ #contact .container .about {
+   margin-bottom: 5rem;
+   padding: 0 1rem;
+ }
+
+ .l-heading {font-size: 3rem;}
 
 }
